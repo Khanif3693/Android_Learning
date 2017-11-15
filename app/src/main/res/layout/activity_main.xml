@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.khan.myapplication.MainActivity">
+
+<include layout="@layout/appbar" android:id="@+id/appbar"></include>
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="127dp"
+        android:layout_height="53dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:onClick="Loginfunc"
+        android:text="Log In"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="195dp"
+        android:layout_above="@+id/signupbtn"
+        android:layout_alignLeft="@+id/signupbtn"
+        android:layout_alignStart="@+id/signupbtn"
+        android:layout_marginBottom="29dp" />
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="127dp"
+        android:layout_height="53dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:onClick="Signupfunc"
+        android:text="Sign Up"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
+        tools:layout_editor_absoluteX="147dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
